@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hyperlinks practice</title>
+    <link rel="icon" type="image/jpg" href="orange.jpg">
+</head>
+
+<header>
+    <h1>Hyperlink and their types</h1>
+</header>
+<body>
+    <main>
+        <section id="absolute references">
+            <h2>Absolute references</h2>
+            <p>Absolute references (sometimes called external links) connect
+                to pages in other domains by providing full link to external
+                resource page.</p>
+            <ul>
+                <li><a href="https://google.com" aria-label="Google link">Google.com</a></li>
+                <li><a href="https://facebook.com" aria-label="Facebook link">Facebook.com</a></li>
+                <li><a href="https://instagram.com" aria-label="Instagram link">Instagram.com</a></li>
+            </ul>
+        </section>
+
+        <section id="relative references">
+            <h2>Relative references</h2>
+            <p>Relative references (sometimes called internal links) connect
+                to pages in our domain by providing filepath to desired resource.</p>
+            <ul>
+                <li><a href="orange.jpg" aria-label="red orange">Click here to
+                 open red orange pic</a></li>
+            </ul>
+        </section>
+
+        <section id="image links">
+            <h2>Images as links</h2>
+            <p>More and more people are moving away from textual prompts to ones
+                that are graphics based.<br/>Click on orange pic to view it new page.</p>
+            <a href="orange.jpg" aria-label="red orange" target="_blank">
+                <img src="orange.jpg" alt="red orange"></a>
+        </section>
+
+        <section id="embedded links">
+            <h2>Embedded links</h2>
+            <p>Embedded links do not connect to external or internal pages
+                or resources. Instead, they provide means to jump to certain
+                points on already opened page as a means of navigation.</p>
+            <ul>
+                <li><a href="hyperlinks.html#absolute references">Absolute references</a> </li>
+                <li><a href="hyperlinks.html#relative references">Relative references</a> </li>
+                <li><a href="hyperlinks.html#image links">Images as links</a> </li>
+                <li><a href="hyperlinks.html#embedded links">Embedded references</a> </li>
+                <li><a href="hyperlinks.html#multimedia">Adding multimedia</a> </li>
+                <li><a href="hyperlinks.html#tables">Adding tables</a> </li>
+
+            </ul>
+        </section>
+
+        <section id="multimedia">
+            <h2>And now adding multimedia!</h2>
+            <p>Adding a video with different attributes!</p>
+
+            <ul>
+                <li><p>Without controls:</p>
+                <video src="tom_cruz_looped.mp4" width="33%">Your
+                    browser does not support the <code>video</code>
+                     element.</video></li>
+                <li><p>With controls:</p>
+                    <video src="tom_cruz_looped.mp4" width="33%" controls>Your
+                        browser does not support the <code>video</code>
+                        element.</video></li>
+                <li><p>With controls and loop, starting at 0.3:</p>
+                    <video src="tom_cruz_looped.mp4#t=3" width="33%"
+                        loop controls>Your browser does not support the
+                        <code>video</code>element.</video></li>
+            </ul>
+
+            <p>Adding audio with different attributes!</p>
+            <ul>
+                <li><p>Without controls:</p>
+                    <audio src="Sting_Desert_Rose.mp3">Your browser does not support the
+                        <code>audio</code> element.</audio></li>
+                    Apparently it won't even show up
+                <li><p>With controls:</p>
+                    <audio src="Sting_Desert_Rose.mp3" controls>Your browser does not support the
+                        <code>audio</code> element.</audio></li>
+                <li><p>With controls but muted:</p>
+                    <audio src="Sting_Desert_Rose.mp3" controls muted>Your browser does not support the
+                        <code>audio</code> element.</audio></li>
+                <li><p>With controls and loop, starting at 4:40:</p>
+                    <audio src="Sting_Desert_Rose.mp3#t=00:04:40" controls loop>Your browser does not support the
+                        <code>audio</code> element.</audio></li>
+            </ul>
+        </section>
+
+        <section id="tables">
+            <h2>Now adding tables!</h2>
+            <p>Just a simple table:</p>
+            <table border="1">
+                <tr><th></th><th>Col One</th><th>Col Two</th><th>Col Three</th></tr>
+                <tr><th>Row One</th><td>One</td><td>Two</td><td>Three</td></tr>
+                <tr><th>Row Two</th><td>Four</td><td>Five</td><td>Six</td></tr>
+                <tr><th>Row Three</th><td>Seven</td><td>Eight</td><td>Nine</td></tr>
+            </table>
+
+            <p>A table with row and col spans:</p>
+            <table border="10">
+                <tr><th>Russian</th><th colspan="2">English</th></tr>
+                <tr><td rowspan="2">Самолёт</td><td>Airplane</td><td>Plane</td></tr>
+                <tr><td colspan="2">Aircraft</td> </tr>
+                <caption>A table with row and col spans (added with <b>captions</b> tag <b>inside table</b> tag)</caption>
+            </table>
+
+        </section>
+
+
+    </main>
+
+</body>
+</html>
